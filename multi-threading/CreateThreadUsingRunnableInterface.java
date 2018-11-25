@@ -1,4 +1,3 @@
-
 class MyThread extends Thread{
     private int threadNum;
 
@@ -8,11 +7,10 @@ class MyThread extends Thread{
 
     public void run(){
         System.out.println("Thread Number:"+threadNum+" is running");
-        System.out.println("id:"+java.lang.Thread.currentThread().getId());
     }
 }
 
-public class CreateThreadUsingThreadClass{
+public class CreateThreadUsingRunnableInterface{
     public static void main(String[] args) {
         System.out.println("main thread starts");
         MyThread t1= new MyThread(1);
